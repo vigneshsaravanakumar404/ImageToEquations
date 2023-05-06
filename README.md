@@ -1,6 +1,5 @@
 # Image to Equation
 
-## Screenshots
 
 <a href="https://imgur.com/3dMZQ2l"><img src="https://i.imgur.com/3dMZQ2l.png" title="source: imgur.com" /></a>
 
