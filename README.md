@@ -6,7 +6,7 @@
 
 
 Images to Include:
-// Computer science club logo
+// Computer science club logo https://www.desmos.com/calculator/80sit4royv
 // Rick astely 
 // Some anime image
 // Gemotric Shape
