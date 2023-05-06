@@ -1,4 +1,4 @@
-# Imate To Equations
+# Image To Equations
 
  
 
