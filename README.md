@@ -1,8 +1,6 @@
 
 # Image to Equation
-Convert any image to a set of graphable equations
 
- 
 
 
 
