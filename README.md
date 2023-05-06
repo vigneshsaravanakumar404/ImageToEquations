@@ -11,7 +11,7 @@
 Images are taken in and converted to an SVG (Scalable Vector Graphics). Unlike other forms of images, SVGs encode images in terms of mathematical equations. Specifically SVGs store images in the form of coordinate pairs that are converted into bezeir curves. The Bezier curves are defined by four points. Two coordinates define the start and ending position of the curve. The other two coordinates determine the concavity of the bezier curve. The Bezier curves are converted into a set of parametric equations that are easily graphable. This program extracts the bezier points from the SVG asset then uses linear interpolation to convert to parametric equations. Then desmos's API is used to graphically visualize the equations.   
 ## Screenshots
 
-<a href="https://ibb.co/dB8kP5K"><img src="https://i.ibb.co/H75GtHg/Screenshot-2023-05-05-213421.png" alt="Screenshot-2023-05-05-213421" border="0"></a>
+[Vignesh Saravanakumar](https://i.imgur.com/3dMZQ2l.png)
 
 
 
