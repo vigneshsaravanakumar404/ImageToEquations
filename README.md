@@ -1,11 +1,4 @@
-
 # Image to Equation
-// Include vignesh saravanakumar image
-
- 
-
-
-
 
 ## Screenshots
 
@@ -13,10 +6,12 @@
 
 
 
-
+Images to Include:
 // Computer science club logo
-
 // Rick astely 
+// Some anime image
+// Gemotric Shape
+// CS Logo
 
 
 
