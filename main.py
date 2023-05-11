@@ -6,13 +6,21 @@ import numpy as np
 import svgpathtools
 from svgpathtools import Line, CubicBezier
 
-# !ENTER FILE LOCATION HERE, SVGs only https://convertio.co/png-svg/
-file = open(r"C:\Users\Vigne\Downloads\download-_6_ (1).svg", "r")
+"""
+Usage:
+ - Only SVG file types are supported
+ - Use https://freesvg.org/ for free SVG files
+ - Or convert PNG images to SVG using https://convertio.co/png-svg/
+"""
+# Enter file location here
+file = open(r"C:\Users\Vigne\Downloads\Red-Bull-logo.svg", "r")
 data = str(file.read()).replace('fill="#000000" opacity="1.000000" stroke="none"', "")
 file.close()
 
 
 # Functions
+
+# Detect the types of segments
 def _tokenize_path(pathfinder):
     FLOAT_RE = re.compile("[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?")
     for x in re.compile("([MmZzLlHhVvCcSsQqTtAa])").split(pathfinder):
@@ -22,10 +30,12 @@ def _tokenize_path(pathfinder):
             yield token
 
 
+# transform into a complex number in the for (a + bi)
 def aplusbiFormat(real, imaginary):
     return real + imaginary * 1j
 
 
+# Convert points to equations from the bezier points
 def extract_path(pathfinder, current_pos=0j):
     # Variables
     elements = list(_tokenize_path(pathfinder))
@@ -93,7 +103,7 @@ pathString = ""
 for path in pathArray:
     pathString += path
 
-path = extract_path(pathString)
+path = extract_path(pathString)  # Get the path from the SVG file
 
 equations, regularEquations = [], []
 for segment in path:
@@ -105,7 +115,8 @@ for segment in path:
         start = aplusbiFormat(segment.start.real, segment.start.imag)
         end = aplusbiFormat(segment.end.real, segment.end.imag)
 
-        if end.real - start.real != 0:
+        # check to make sure line doesn't have undefined slope to prevent mathematical erorrs
+        if end.real - start.real != 0 and end.imag - start.imag != 0:
             # calculate the slope and y-intercept of the line segment
             m = (end.imag - start.imag) / (end.real - start.real)
             b = start.imag - m * start.real
@@ -119,45 +130,67 @@ for segment in path:
             yMax = max(start.imag, end.imag)
 
             # Convert the linear equation into the form y=mx+b and put it in latex format
+            equations.append(
+                "y="
+                + str(m)
+                + "x+"
+                + str(b)
+                + "\\\\left\\\\{"
+                + str(xMin)
+                + "\\\\le x \\\\le "
+                + str(yMin)
+                + "\\\\right\\\\}\\\\left\\\\{"
+                + str(yMin)
+                + "\\\\le y \\\\le "
+                + str(yMax)
+                + "\\\\right\\\\}"
+            )
 
-        equations.append(
-            "y="
-            + str(m)
-            + "x+"
-            + str(b)
-            + "\\\\left\\\\{"
-            + str(xMin)
-            + "\\\\le x \\\\le "
-            + str(yMin)
-            + "\\\\right\\\\}\\\\left\\\\{"
-            + str(yMin)
-            + "\\\\le y \\\\le "
-            + str(yMax)
-            + "\\\\right\\\\}"
-        )
-        # equations.append(f"y={m}x+{b}\\left\\{{{xMin} \\le x \\le {xMax}\\}}\\right\\}}\\left\\{{{yMin} \\le y \\le {yMax}\\}}\\right\\}}")
-        equations.append(
-            "y="
-            + str(m)
-            + "x+"
-            + str(b)
-            + "\\\\left\\\\{"
-            + str(xMin)
-            + "\\\\le x \\\\le "
-            + str(yMin)
-            + "\\\\right\\\\}\\\\left\\\\{"
-            + str(yMin)
-            + "\\\\le y \\\\le "
-            + str(yMax)
-            + "\\\\right\\\\}"
-        )
+            # Convert the linear equation into the form y=mx+b and put it in lambda format
+            regularEquations.append(lambda x: m * x + b)
+        if end.real - start.real == 0:
+            # calculate the bounds of the line segment in the x direction
+            xMin = min(start.real, end.real)
+            xMax = max(start.real, end.real)
 
-        print(
-            f"y={m}x+{b}\\left\\{{{xMin} \\le x \\le {xMax}\\}}\\right\\}}\\left\\{{{yMin} \\le y \\le {yMax}\\}}\\right\\}}"
-        )
+            # calculate the bounds of the line segment in the y direction
+            yMin = min(start.imag, end.imag)
+            yMax = max(start.imag, end.imag)
 
-        # Convert the linear equation into the form y=mx+b and put it in lambda format
-        regularEquations.append(lambda x: m * x + b)
+            # Convert the linear equation into the form x=c and put it in latex format
+            equations.append(
+                "x="
+                + str(start.real)
+                + "\\\\left\\\\{"
+                + str(xMin)
+                + "\\\\le x \\\\le "
+                + str(yMin)
+                + "\\\\right\\\\}\\\\left\\\\{"
+                + str(yMin)
+                + "\\\\le y \\\\le "
+                + str(yMax)
+                + "\\\\right\\\\}"
+            )
+
+            # Convert the linear equation into the form x=c and put it in lambda format
+            regularEquations.append(lambda x: start.real)
+        else:
+            yMin = min(start.imag, end.imag)
+            yMax = max(start.imag, end.imag)
+
+            # if the slope is undefined, then the line is vertical and the equation is in the form x=a
+            equations.append(
+                "x="
+                + str(start.real)
+                + "\\\\left\\\\{"
+                + str(yMin)
+                + "\\\\le y \\\\le "
+                + str(yMax)
+                + "\\\\right\\\\}"
+            )
+
+            # if the slope is undefined, then the line is vertical and the equation is in the form x=a
+            regularEquations.append(lambda x: start.real)
 
     elif isinstance(segment, svgpathtools.path.CubicBezier):
 
@@ -259,9 +292,6 @@ desmos = """
  var calculator = Desmos.GraphingCalculator(elt);
 """
 
-# use numpy to find the bounds of the graph
-
-
 # Add the bounds to the Desmos API script
 desmos += (
         "calculator.setMathBounds({ left: "
@@ -293,6 +323,11 @@ webbrowser.open("desmos.html", new=2)
 
 # TODO:
 # Explain the math
-# Comment the code
 # Complete to do in readme
 # Clean up Github Profile
+# Create sample HTML files
+
+
+# print the equations
+for i in range(len(equations)):
+    print(equations[i].replace("\\\\", "\\"))
