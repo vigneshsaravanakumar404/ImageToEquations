@@ -326,8 +326,3 @@ webbrowser.open("desmos.html", new=2)
 # Complete to do in readme
 # Clean up Github Profile
 # Create sample HTML files
-
-
-# print the equations
-for i in range(len(equations)):
-    print(equations[i].replace("\\\\", "\\"))
