@@ -111,8 +111,12 @@ for segment in path:
 
             #TODO FORMAT THE DAMN EQUATION
             # Convert the linear equation into the form y=mx+b and put it in latex format
-            equations.append("y=" + str(m) + "x+" + str(b) + "\\\\left\\{" + str(xMin) + " x " + str(
-                xMax) + "\\\\right\\}\\\\left\\{" + str(yMin) + " y " + str(yMax) + "}")
+            #equations.append(f"y={m}x+{b}\\left\\{{{xMin} \\le x \\le {xMax}\\}}\\right\\}}\\left\\{{{yMin} \\le y \\le {yMax}\\}}\\right\\}}")
+            equations.append("y=" + str(m) + "x+" + str(b) + "\\\\left\\\\{" + str(xMin) + "\\\\le x \\\\le " + str(yMin) + "\\\\right\\\\}\\\\left\\\\{" + str(yMin) + "\\\\le y \\\\le " + str(yMax) + "\\\\right\\\\}")
+
+
+            print(f"y={m}x+{b}\\left\\{{{xMin} \\le x \\le {xMax}\\}}\\right\\}}\\left\\{{{yMin} \\le y \\le {yMax}\\}}\\right\\}}")
+
 
 
 
