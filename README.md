@@ -2,7 +2,9 @@
 
 <a href="https://imgur.com/3dMZQ2l"><img src="https://i.imgur.com/3dMZQ2l.png" title="source: imgur.com" /></a>
 
-Images to Include:
+## Screenshots
+
+**to do include images**
 
 // Computer science club logo  https://www.desmos.com/calculator/dv4rccpeai
 
@@ -18,13 +20,22 @@ Images to Include:
 
 ## How It Works
 
-Images are taken in and converted to an SVG (Scalable Vector Graphics). Unlike other forms of images, SVGs encode images
-in terms of mathematical equations. Specifically SVGs store images in the form of coordinate pairs that are converted
-into bezeir curves. The Bezier curves are defined by four points. Two coordinates define the start and ending position
-of the curve. The other two coordinates determine the concavity of the bezier curve. The Bezier curves are converted
-into a set of parametric equations that are easily graphable. This program extracts the bezier points from the SVG asset
-then uses linear interpolation to convert to parametric equations. Then desmos's API is used to graphically visualize
-the equations.
+**to do include explanation**
+
+## Demo
+
+**to do include demo video**
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  pip install svgpathtools
+  pip install svgpathtools
+  pip install numpy
+```
 
 ## Built With
 
@@ -48,7 +59,6 @@ the equations.
 </table>
 
 ## Acknowledgements
-
 - [Desmos API](https://www.desmos.com/api/v1.8/docs/index.html)
 - [SVG Graphics Explanation](https://developer.mozilla.org/en-US/docs/Web/SVG)
 - [SVG Documentation](https://www.w3.org/2000/svg)

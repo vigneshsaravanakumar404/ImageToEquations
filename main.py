@@ -292,9 +292,7 @@ with open("desmos.html", "w") as f:
 webbrowser.open("desmos.html", new=2)
 
 # TODO:
-# Create demo video
-# Create tkinter GUI
 # Explain the math
 # Comment the code
-# Improve the README.md
+# Complete to do in readme
 # Clean up Github Profile
