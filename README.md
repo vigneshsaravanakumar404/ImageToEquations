@@ -1,16 +1,20 @@
 # Image to Equation
 
-
 <a href="https://imgur.com/3dMZQ2l"><img src="https://i.imgur.com/3dMZQ2l.png" title="source: imgur.com" /></a>
 
 Images to Include:
-// Computer science club logo https://www.desmos.com/calculator/80sit4royv
-// Rick astely
-// Some anime image
-// Gemotric Shape
-// CS Logo
 
+// Computer science club logo  https://www.desmos.com/calculator/dv4rccpeai
 
+// SBHS Logo https://www.desmos.com/calculator/fbou42kptf
+
+// Soccer ball https://www.desmos.com/calculator/3wby6lr2je
+
+// 750 Royals Logo https://www.desmos.com/calculator/wjrwpiiese
+
+// Rick Astley https://www.desmos.com/calculator/lqt7ojodrm
+
+*_For all graphs the original image is included on the right for reference, program generated output is on the left_*
 
 ## How It Works
 
@@ -23,25 +27,25 @@ then uses linear interpolation to convert to parametric equations. Then desmos's
 the equations.
 
 ## Built With
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Python-Dark.svg" width="64" height="64" alt="Python">
-    </td>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Gradle-Dark.svg" width="64" height="64" alt="Gradle icon">
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Idea-Dark." width="64" height="64" alt="IntelliJ IDEA icon">
-    </td>
-    <td align="center">
-      <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/SVG-Dark.svg" width="64" height="64" alt="SVG">
-    </td>
-  </tr>
-</table>
 
+<table>
+ <tr>
+   <td align="center">
+     <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Python-Dark.svg" width="64" height="64" alt="Python">
+   </td>
+   <td align="center">
+     <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Gradle-Dark.svg" width="64" height="64" alt="Gradle icon">
+   </td>
+ </tr>
+ <tr>
+   <td align="center">
+     <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Idea-Dark." width="64" height="64" alt="IntelliJ IDEA icon">
+   </td>
+   <td align="center">
+     <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/SVG-Dark.svg" width="64" height="64" alt="SVG">
+   </td>
+ </tr>
+</table>
 
 ## Acknowledgements
 
@@ -50,5 +54,8 @@ the equations.
 - [SVG Documentation](https://www.w3.org/2000/svg)
 - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
 - [Awesome README](https://github.com/matiassingers/awesome-readme)
+
+
+
 
 
