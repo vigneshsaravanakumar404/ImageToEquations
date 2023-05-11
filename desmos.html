@@ -1,7 +1,10 @@
+
 <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-<div id="calculator" style="width: 1080; height: 720;"></div><script>
+<div id="calculator" style="width: window.innerWidth; height: window.innerHeight;"></div>
+<script>
   var elt = document.getElementById('calculator');
   var calculator = Desmos.GraphingCalculator(elt);
+calculator.setMathBounds({ left: -500, right: 25800.0, bottom: -500, top: 25800.0 });
 calculator.setExpression({ id: 'a-slider0', latex: '\\left((1-t)^3*3704.0+3*t*(1-t)^2*3707.0+3*t^2*(1-t)*3714.0+t^3*3719.0, (1-t)^3*6128.0+3*t*(1-t)^2*6049.0+3*t^2*(1-t)*5912.0+t^3*5823.0)\\right)' });
 calculator.setExpression({ id: 'a-slider1', latex: '\\left((1-t)^3*3719.0+3*t*(1-t)^2*3727.0+3*t^2*(1-t)*3726.0+t^3*3717.0, (1-t)^3*5823.0+3*t*(1-t)^2*5682.0+3*t^2*(1-t)*5472.0+t^3*4614.0)\\right)' });
 calculator.setExpression({ id: 'a-slider2', latex: '\\left((1-t)^3*3717.0+3*t*(1-t)^2*3715.0+3*t^2*(1-t)*3721.0+t^3*3761.0, (1-t)^3*4614.0+3*t*(1-t)^2*4445.0+3*t^2*(1-t)*4420.0+t^3*4420.0)\\right)' });
@@ -16,7 +19,7 @@ calculator.setExpression({ id: 'a-slider10', latex: '\\left((1-t)^3*4296.0+3*t*(
 calculator.setExpression({ id: 'a-slider11', latex: '\\left((1-t)^3*4296.0+3*t*(1-t)^2*4288.0+3*t^2*(1-t)*4271.0+t^3*4260.0, (1-t)^3*4567.0+3*t*(1-t)^2*4582.0+3*t^2*(1-t)*4649.0+t^3*4715.0)\\right)' });
 calculator.setExpression({ id: 'a-slider12', latex: '\\left((1-t)^3*4260.0+3*t*(1-t)^2*4236.0+3*t^2*(1-t)*4192.0+t^3*4161.0, (1-t)^3*4715.0+3*t*(1-t)^2*4851.0+3*t^2*(1-t)*5028.0+t^3*5110.0)\\right)' });
 calculator.setExpression({ id: 'a-slider13', latex: '\\left((1-t)^3*4161.0+3*t*(1-t)^2*4090.0+3*t^2*(1-t)*3946.0+t^3*3826.0, (1-t)^3*5110.0+3*t*(1-t)^2*5299.0+3*t^2*(1-t)*5306.0+t^3*5125.0)\\right)' });
-calculator.setExpression({ id: 'a-slider14', latex: 'y=1.5384615384615385x+-761.1538461538466\left\{3800.0\le x\le 3826.0\right\}\left\{5085.0\le y\le 5125.0\right\}' });
+calculator.setExpression({ id: 'a-slider14', latex: 'y=1.5384615384615385x+-761.1538461538466\\left\{3800.0 x 3826.0\\right\}\\left\{5085.0 y 5125.0}' });
 calculator.setExpression({ id: 'a-slider15', latex: '\\left((1-t)^3*3800.0+3*t*(1-t)^2*3799.0+3*t^2*(1-t)*3783.0+t^3*3765.0, (1-t)^3*5225.0+3*t*(1-t)^2*5439.0+3*t^2*(1-t)*5809.0+t^3*5986.0)\\right)' });
 calculator.setExpression({ id: 'a-slider16', latex: '\\left((1-t)^3*3765.0+3*t*(1-t)^2*3757.0+3*t^2*(1-t)*3747.0+t^3*3744.0, (1-t)^3*5986.0+3*t*(1-t)^2*6074.0+3*t^2*(1-t)*6173.0+t^3*6208.0)\\right)' });
 calculator.setExpression({ id: 'a-slider17', latex: '\\left((1-t)^3*3744.0+3*t*(1-t)^2*3739.0+3*t^2*(1-t)*3736.0+t^3*3718.0, (1-t)^3*6208.0+3*t*(1-t)^2*6262.0+3*t^2*(1-t)*6270.0+t^3*6270.0)\\right)' });
@@ -38,8 +41,8 @@ calculator.setExpression({ id: 'a-slider32', latex: '\\left((1-t)^3*3160.0+3*t*(
 calculator.setExpression({ id: 'a-slider33', latex: '\\left((1-t)^3*3455.0+3*t*(1-t)^2*3513.0+3*t^2*(1-t)*3540.0+t^3*3540.0, (1-t)^3*4640.0+3*t*(1-t)^2*4668.0+3*t^2*(1-t)*4719.0+t^3*4801.0)\\right)' });
 calculator.setExpression({ id: 'a-slider34', latex: '\\left((1-t)^3*3540.0+3*t*(1-t)^2*3540.0+3*t^2*(1-t)*3483.0+t^3*3407.0, (1-t)^3*4801.0+3*t*(1-t)^2*4903.0+3*t^2*(1-t)*5001.0+t^3*5029.0)\\right)' });
 calculator.setExpression({ id: 'a-slider35', latex: '\\left((1-t)^3*3407.0+3*t*(1-t)^2*3325.0+3*t^2*(1-t)*3208.0+t^3*3131.0, (1-t)^3*5029.0+3*t*(1-t)^2*5060.0+3*t^2*(1-t)*5023.0+t^3*4942.0)\\right)' });
-calculator.setExpression({ id: 'a-slider36', latex: 'y=1.0681818181818181x+1597.5227272727275\left\{3087.0\le x\le 3131.0\right\}\left\{4895.0\le y\le 4942.0\right\}' });
-calculator.setExpression({ id: 'a-slider37', latex: 'y=70.83333333333333x+-213767.49999999997\left\{3087.0\le x\le 3093.0\right\}\left\{4895.0\le y\le 5320.0\right\}' });
+calculator.setExpression({ id: 'a-slider36', latex: 'y=1.0681818181818181x+1597.5227272727275\\left\{3087.0 x 3131.0\\right\}\\left\{4895.0 y 4942.0}' });
+calculator.setExpression({ id: 'a-slider37', latex: 'y=70.83333333333333x+-213767.49999999997\\left\{3087.0 x 3093.0\\right\}\\left\{4895.0 y 5320.0}' });
 calculator.setExpression({ id: 'a-slider38', latex: '\\left((1-t)^3*3093.0+3*t*(1-t)^2*3097.0+3*t^2*(1-t)*3097.0+t^3*3093.0, (1-t)^3*5320.0+3*t*(1-t)^2*5554.0+3*t^2*(1-t)*5805.0+t^3*5878.0)\\right)' });
 calculator.setExpression({ id: 'a-slider39', latex: '\\left((1-t)^3*3093.0+3*t*(1-t)^2*3088.0+3*t^2*(1-t)*3085.0+t^3*3070.0, (1-t)^3*5878.0+3*t*(1-t)^2*5994.0+3*t^2*(1-t)*6010.0+t^3*6010.0)\\right)' });
 calculator.setExpression({ id: 'a-slider40', latex: '\\left((1-t)^3*3070.0+3*t*(1-t)^2*3054.0+3*t^2*(1-t)*3052.0+t^3*3046.0, (1-t)^3*6010.0+3*t*(1-t)^2*6010.0+3*t^2*(1-t)*5992.0+t^3*5838.0)\\right)' });
@@ -58,8 +61,8 @@ calculator.setExpression({ id: 'a-slider52', latex: '\\left((1-t)^3*1770.0+3*t*(
 calculator.setExpression({ id: 'a-slider53', latex: '\\left((1-t)^3*1926.0+3*t*(1-t)^2*1983.0+3*t^2*(1-t)*2045.0+t^3*2065.0, (1-t)^3*4841.0+3*t*(1-t)^2*4916.0+3*t^2*(1-t)*5003.0+t^3*5034.0)\\right)' });
 calculator.setExpression({ id: 'a-slider54', latex: '\\left((1-t)^3*2065.0+3*t*(1-t)^2*2085.0+3*t^2*(1-t)*2107.0+t^3*2113.0, (1-t)^3*5034.0+3*t*(1-t)^2*5066.0+3*t^2*(1-t)*5093.0+t^3*5095.0)\\right)' });
 calculator.setExpression({ id: 'a-slider55', latex: '\\left((1-t)^3*2113.0+3*t*(1-t)^2*2120.0+3*t^2*(1-t)*2212.0+t^3*2317.0, (1-t)^3*5095.0+3*t*(1-t)^2*5097.0+3*t^2*(1-t)*5101.0+t^3*5102.0)\\right)' });
-calculator.setExpression({ id: 'a-slider56', latex: 'y=0.015544041450777202x+5065.984455958549\left\{2317.0\le x\le 2510.0\right\}\left\{5102.0\le y\le 5105.0\right\}' });
-calculator.setExpression({ id: 'a-slider57', latex: 'y=-5.0x+17655.0\left\{2510.0\le x\le 2521.0\right\}\left\{5050.0\le y\le 5105.0\right\}' });
+calculator.setExpression({ id: 'a-slider56', latex: 'y=0.015544041450777202x+5065.984455958549\\left\{2317.0 x 2510.0\\right\}\\left\{5102.0 y 5105.0}' });
+calculator.setExpression({ id: 'a-slider57', latex: 'y=-5.0x+17655.0\\left\{2510.0 x 2521.0\\right\}\\left\{5050.0 y 5105.0}' });
 calculator.setExpression({ id: 'a-slider58', latex: '\\left((1-t)^3*2521.0+3*t*(1-t)^2*2545.0+3*t^2*(1-t)*2605.0+t^3*2640.0, (1-t)^3*5050.0+3*t*(1-t)^2*4925.0+3*t^2*(1-t)*4709.0+t^3*4615.0)\\right)' });
 calculator.setExpression({ id: 'a-slider59', latex: '\\left((1-t)^3*2640.0+3*t*(1-t)^2*2661.0+3*t^2*(1-t)*2680.0+t^3*2684.0, (1-t)^3*4615.0+3*t*(1-t)^2*4560.0+3*t^2*(1-t)*4507.0+t^3*4497.0)\\right)' });
 calculator.setExpression({ id: 'a-slider60', latex: '\\left((1-t)^3*2684.0+3*t*(1-t)^2*2688.0+3*t^2*(1-t)*2698.0+t^3*2712.0, (1-t)^3*4497.0+3*t*(1-t)^2*4485.0+3*t^2*(1-t)*4480.0+t^3*4482.0)\\right)' });
@@ -106,7 +109,7 @@ calculator.setExpression({ id: 'a-slider100', latex: '\\left((1-t)^3*5880.0+3*t*
 calculator.setExpression({ id: 'a-slider101', latex: '\\left((1-t)^3*5839.0+3*t*(1-t)^2*5783.0+3*t^2*(1-t)*5703.0+t^3*5660.0, (1-t)^3*5167.0+3*t*(1-t)^2*5218.0+3*t^2*(1-t)*5225.0+t^3*5182.0)\\right)' });
 calculator.setExpression({ id: 'a-slider102', latex: '\\left((1-t)^3*4923.0+3*t*(1-t)^2*4927.0+3*t^2*(1-t)*4934.0+t^3*4949.0, (1-t)^3*5023.0+3*t*(1-t)^2*4913.0+3*t^2*(1-t)*4858.0+t^3*4809.0)\\right)' });
 calculator.setExpression({ id: 'a-slider103', latex: '\\left((1-t)^3*4949.0+3*t*(1-t)^2*4985.0+3*t^2*(1-t)*5055.0+t^3*5121.0, (1-t)^3*4809.0+3*t*(1-t)^2*4694.0+3*t^2*(1-t)*4623.0+t^3*4632.0)\\right)' });
-calculator.setExpression({ id: 'a-slider104', latex: 'y=0.1724137931034483x+3749.0689655172414\left\{5121.0\le x\le 5150.0\right\}\left\{4632.0\le y\le 4637.0\right\}' });
+calculator.setExpression({ id: 'a-slider104', latex: 'y=0.1724137931034483x+3749.0689655172414\\left\{5121.0 x 5150.0\\right\}\\left\{4632.0 y 4637.0}' });
 calculator.setExpression({ id: 'a-slider105', latex: '\\left((1-t)^3*5150.0+3*t*(1-t)^2*5150.0+3*t^2*(1-t)*5126.0+t^3*5110.0, (1-t)^3*4529.0+3*t*(1-t)^2*4415.0+3*t^2*(1-t)*4161.0+t^3*4100.0)\\right)' });
 calculator.setExpression({ id: 'a-slider106', latex: '\\left((1-t)^3*5110.0+3*t*(1-t)^2*5095.0+3*t^2*(1-t)*5058.0+t^3*5028.0, (1-t)^3*4100.0+3*t*(1-t)^2*4043.0+3*t^2*(1-t)*3995.0+t^3*3992.0)\\right)' });
 calculator.setExpression({ id: 'a-slider107', latex: '\\left((1-t)^3*5028.0+3*t*(1-t)^2*4986.0+3*t^2*(1-t)*4960.0+t^3*4932.0, (1-t)^3*3992.0+3*t*(1-t)^2*3987.0+3*t^2*(1-t)*4007.0+t^3*4068.0)\\right)' });
@@ -129,8 +132,8 @@ calculator.setExpression({ id: 'a-slider123', latex: '\\left((1-t)^3*4937.0+3*t*
 calculator.setExpression({ id: 'a-slider124', latex: '\\left((1-t)^3*4595.0+3*t*(1-t)^2*4509.0+3*t^2*(1-t)*4457.0+t^3*4456.0, (1-t)^3*5150.0+3*t*(1-t)^2*5133.0+3*t^2*(1-t)*5025.0+t^3*4865.0)\\right)' });
 calculator.setExpression({ id: 'a-slider125', latex: '\\left((1-t)^3*4456.0+3*t*(1-t)^2*4455.0+3*t^2*(1-t)*4490.0+t^3*4564.0, (1-t)^3*4865.0+3*t*(1-t)^2*4722.0+3*t^2*(1-t)*4660.0+t^3*4674.0)\\right)' });
 calculator.setExpression({ id: 'a-slider126', latex: '\\left((1-t)^3*4564.0+3*t*(1-t)^2*4629.0+3*t^2*(1-t)*4680.0+t^3*4702.0, (1-t)^3*4674.0+3*t*(1-t)^2*4686.0+3*t^2*(1-t)*4765.0+t^3*4888.0)\\right)' });
-calculator.setExpression({ id: 'a-slider127', latex: 'y=6.090909090909091x+-23751.454545454544\left\{4702.0\le x\le 4713.0\right\}\left\{4888.0\le y\le 4955.0\right\}' });
-calculator.setExpression({ id: 'a-slider128', latex: 'y=-5.625x+31465.625\left\{4713.0\le x\le 4729.0\right\}\left\{4865.0\le y\le 4955.0\right\}' });
+calculator.setExpression({ id: 'a-slider127', latex: 'y=6.090909090909091x+-23751.454545454544\\left\{4702.0 x 4713.0\\right\}\\left\{4888.0 y 4955.0}' });
+calculator.setExpression({ id: 'a-slider128', latex: 'y=-5.625x+31465.625\\left\{4713.0 x 4729.0\\right\}\\left\{4865.0 y 4955.0}' });
 calculator.setExpression({ id: 'a-slider129', latex: '\\left((1-t)^3*4729.0+3*t*(1-t)^2*4747.0+3*t^2*(1-t)*4780.0+t^3*4811.0, (1-t)^3*4865.0+3*t*(1-t)^2*4766.0+3*t^2*(1-t)*4700.0+t^3*4700.0)\\right)' });
 calculator.setExpression({ id: 'a-slider130', latex: '\\left((1-t)^3*4811.0+3*t*(1-t)^2*4835.0+3*t^2*(1-t)*4835.0+t^3*4811.0, (1-t)^3*4700.0+3*t*(1-t)^2*4700.0+3*t^2*(1-t)*4724.0+t^3*4764.0)\\right)' });
 calculator.setExpression({ id: 'a-slider131', latex: '\\left((1-t)^3*4811.0+3*t*(1-t)^2*4801.0+3*t^2*(1-t)*4787.0+t^3*4781.0, (1-t)^3*4764.0+3*t*(1-t)^2*4781.0+3*t^2*(1-t)*4829.0+t^3*4870.0)\\right)' });
@@ -171,21 +174,21 @@ calculator.setExpression({ id: 'a-slider165', latex: '\\left((1-t)^3*7509.0+3*t*
 calculator.setExpression({ id: 'a-slider166', latex: '\\left((1-t)^3*6194.0+3*t*(1-t)^2*6173.0+3*t^2*(1-t)*6112.0+t^3*6060.0, (1-t)^3*3742.0+3*t*(1-t)^2*3726.0+3*t^2*(1-t)*3668.0+t^3*3614.0)\\right)' });
 calculator.setExpression({ id: 'a-slider167', latex: '\\left((1-t)^3*6060.0+3*t*(1-t)^2*5988.0+3*t^2*(1-t)*5952.0+t^3*5911.0, (1-t)^3*3614.0+3*t*(1-t)^2*3538.0+3*t^2*(1-t)*3490.0+t^3*3415.0)\\right)' });
 calculator.setExpression({ id: 'a-slider168', latex: '\\left((1-t)^3*5911.0+3*t*(1-t)^2*5881.0+3*t^2*(1-t)*5844.0+t^3*5828.0, (1-t)^3*3415.0+3*t*(1-t)^2*3360.0+3*t^2*(1-t)*3293.0+t^3*3265.0)\\right)' });
-calculator.setExpression({ id: 'a-slider169', latex: 'y=1.7857142857142858x+-7142.142857142857\left\{5800.0\le x\le 5828.0\right\}\left\{3215.0\le y\le 3265.0\right\}' });
+calculator.setExpression({ id: 'a-slider169', latex: 'y=1.7857142857142858x+-7142.142857142857\\left\{5800.0 x 5828.0\\right\}\\left\{3215.0 y 3265.0}' });
 calculator.setExpression({ id: 'a-slider170', latex: '\\left((1-t)^3*5800.0+3*t*(1-t)^2*5800.0+3*t^2*(1-t)*5797.0+t^3*5793.0, (1-t)^3*3301.0+3*t*(1-t)^2*3348.0+3*t^2*(1-t)*3448.0+t^3*3523.0)\\right)' });
 calculator.setExpression({ id: 'a-slider171', latex: '\\left((1-t)^3*5793.0+3*t*(1-t)^2*5788.0+3*t^2*(1-t)*5785.0+t^3*5770.0, (1-t)^3*3523.0+3*t*(1-t)^2*3644.0+3*t^2*(1-t)*3660.0+t^3*3660.0)\\right)' });
 calculator.setExpression({ id: 'a-slider172', latex: '\\left((1-t)^3*5770.0+3*t*(1-t)^2*5754.0+3*t^2*(1-t)*5751.0+t^3*5745.0, (1-t)^3*3660.0+3*t*(1-t)^2*3660.0+3*t^2*(1-t)*3642.0+t^3*3488.0)\\right)' });
 calculator.setExpression({ id: 'a-slider173', latex: '\\left((1-t)^3*5745.0+3*t*(1-t)^2*5742.0+3*t^2*(1-t)*5740.0+t^3*5742.0, (1-t)^3*3488.0+3*t*(1-t)^2*3393.0+3*t^2*(1-t)*3221.0+t^3*3105.0)\\right)' });
 calculator.setExpression({ id: 'a-slider174', latex: '\\left((1-t)^3*5742.0+3*t*(1-t)^2*5745.0+3*t^2*(1-t)*5745.0+t^3*5767.0, (1-t)^3*3105.0+3*t*(1-t)^2*2897.0+3*t^2*(1-t)*2895.0+t^3*2892.0)\\right)' });
 calculator.setExpression({ id: 'a-slider175', latex: '\\left((1-t)^3*5767.0+3*t*(1-t)^2*5794.0+3*t^2*(1-t)*5798.0+t^3*5802.0, (1-t)^3*2892.0+3*t*(1-t)^2*2888.0+3*t^2*(1-t)*2903.0+t^3*3025.0)\\right)' });
-calculator.setExpression({ id: 'a-slider176', latex: 'y=30.0x+-171035.0\left\{5802.0\le x\le 5805.0\right\}\left\{3025.0\le y\le 3115.0\right\}' });
-calculator.setExpression({ id: 'a-slider177', latex: 'y=1.7567567567567568x+-7082.972972972973\left\{5805.0\le x\le 5879.0\right\}\left\{3115.0\le y\le 3245.0\right\}' });
+calculator.setExpression({ id: 'a-slider176', latex: 'y=30.0x+-171035.0\\left\{5802.0 x 5805.0\\right\}\\left\{3025.0 y 3115.0}' });
+calculator.setExpression({ id: 'a-slider177', latex: 'y=1.7567567567567568x+-7082.972972972973\\left\{5805.0 x 5879.0\\right\}\\left\{3115.0 y 3245.0}' });
 calculator.setExpression({ id: 'a-slider178', latex: '\\left((1-t)^3*5879.0+3*t*(1-t)^2*6019.0+3*t^2*(1-t)*6093.0+t^3*6224.0, (1-t)^3*3245.0+3*t*(1-t)^2*3491.0+3*t^2*(1-t)*3588.0+t^3*3697.0)\\right)' });
 calculator.setExpression({ id: 'a-slider179', latex: '\\left((1-t)^3*6224.0+3*t*(1-t)^2*6267.0+3*t^2*(1-t)*6272.0+t^3*6261.0, (1-t)^3*3697.0+3*t*(1-t)^2*3733.0+3*t^2*(1-t)*3741.0+t^3*3754.0)\\right)' });
 calculator.setExpression({ id: 'a-slider180', latex: '\\left((1-t)^3*6261.0+3*t*(1-t)^2*6243.0+3*t^2*(1-t)*6239.0+t^3*6194.0, (1-t)^3*3754.0+3*t*(1-t)^2*3775.0+3*t^2*(1-t)*3775.0+t^3*3742.0)\\right)' });
 calculator.setExpression({ id: 'a-slider181', latex: '\\left((1-t)^3*6666.0+3*t*(1-t)^2*6619.0+3*t^2*(1-t)*6672.0+t^3*6766.0, (1-t)^3*3450.0+3*t*(1-t)^2*3331.0+3*t^2*(1-t)*3097.0+t^3*3010.0)\\right)' });
 calculator.setExpression({ id: 'a-slider182', latex: '\\left((1-t)^3*6766.0+3*t*(1-t)^2*6816.0+3*t^2*(1-t)*6853.0+t^3*6894.0, (1-t)^3*3010.0+3*t*(1-t)^2*2964.0+3*t^2*(1-t)*2958.0+t^3*2991.0)\\right)' });
-calculator.setExpression({ id: 'a-slider183', latex: 'y=0.7692307692307693x+-2312.076923076924\left\{6894.0\le x\le 6920.0\right\}\left\{2991.0\le y\le 3011.0\right\}' });
+calculator.setExpression({ id: 'a-slider183', latex: 'y=0.7692307692307693x+-2312.076923076924\\left\{6894.0 x 6920.0\\right\}\\left\{2991.0 y 3011.0}' });
 calculator.setExpression({ id: 'a-slider184', latex: '\\left((1-t)^3*6920.0+3*t*(1-t)^2*6919.0+3*t^2*(1-t)*6896.0+t^3*6864.0, (1-t)^3*2868.0+3*t*(1-t)^2*2615.0+3*t^2*(1-t)*2393.0+t^3*2343.0)\\right)' });
 calculator.setExpression({ id: 'a-slider185', latex: '\\left((1-t)^3*6864.0+3*t*(1-t)^2*6824.0+3*t^2*(1-t)*6649.0+t^3*6449.0, (1-t)^3*2343.0+3*t*(1-t)^2*2280.0+3*t^2*(1-t)*2349.0+t^3*2508.0)\\right)' });
 calculator.setExpression({ id: 'a-slider186', latex: '\\left((1-t)^3*6449.0+3*t*(1-t)^2*6368.0+3*t^2*(1-t)*6337.0+t^3*6332.0, (1-t)^3*2508.0+3*t*(1-t)^2*2572.0+3*t^2*(1-t)*2581.0+t^3*2545.0)\\right)' });
@@ -210,21 +213,21 @@ calculator.setExpression({ id: 'a-slider204', latex: '\\left((1-t)^3*6649.0+3*t*
 calculator.setExpression({ id: 'a-slider205', latex: '\\left((1-t)^3*6651.0+3*t*(1-t)^2*6637.0+3*t^2*(1-t)*6620.0+t^3*6590.0, (1-t)^3*3150.0+3*t*(1-t)^2*3150.0+3*t^2*(1-t)*3128.0+t^3*3074.0)\\right)' });
 calculator.setExpression({ id: 'a-slider206', latex: '\\left((1-t)^3*6590.0+3*t*(1-t)^2*6497.0+3*t^2*(1-t)*6386.0+t^3*6319.0, (1-t)^3*3074.0+3*t*(1-t)^2*2905.0+3*t^2*(1-t)*2835.0+t^3*2906.0)\\right)' });
 calculator.setExpression({ id: 'a-slider207', latex: '\\left((1-t)^3*6319.0+3*t*(1-t)^2*6299.0+3*t^2*(1-t)*6295.0+t^3*6291.0, (1-t)^3*2906.0+3*t*(1-t)^2*2928.0+3*t^2*(1-t)*2944.0+t^3*3011.0)\\right)' });
-calculator.setExpression({ id: 'a-slider208', latex: 'y=-26.333333333333332x+168674.0\left\{6288.0\le x\le 6291.0\right\}\left\{3011.0\le y\le 3090.0\right\}' });
-calculator.setExpression({ id: 'a-slider209', latex: 'y=0.0x+3090.0\left\{6288.0\le x\le 6332.0\right\}\left\{3090.0\le y\le 3090.0\right\}' });
+calculator.setExpression({ id: 'a-slider208', latex: 'y=-26.333333333333332x+168674.0\\left\{6288.0 x 6291.0\\right\}\\left\{3011.0 y 3090.0}' });
+calculator.setExpression({ id: 'a-slider209', latex: 'y=0.0x+3090.0\\left\{6288.0 x 6332.0\\right\}\\left\{3090.0 y 3090.0}' });
 calculator.setExpression({ id: 'a-slider210', latex: '\\left((1-t)^3*6332.0+3*t*(1-t)^2*6366.0+3*t^2*(1-t)*6387.0+t^3*6418.0, (1-t)^3*3090.0+3*t*(1-t)^2*3090.0+3*t^2*(1-t)*3097.0+t^3*3120.0)\\right)' });
 calculator.setExpression({ id: 'a-slider211', latex: '\\left((1-t)^3*6418.0+3*t*(1-t)^2*6476.0+3*t^2*(1-t)*6493.0+t^3*6498.0, (1-t)^3*3120.0+3*t*(1-t)^2*3162.0+3*t^2*(1-t)*3200.0+t^3*3300.0)\\right)' });
 calculator.setExpression({ id: 'a-slider212', latex: '\\left((1-t)^3*6498.0+3*t*(1-t)^2*6502.0+3*t^2*(1-t)*6500.0+t^3*6484.0, (1-t)^3*3300.0+3*t*(1-t)^2*3374.0+3*t^2*(1-t)*3387.0+t^3*3402.0)\\right)' });
 calculator.setExpression({ id: 'a-slider213', latex: '\\left((1-t)^3*6484.0+3*t*(1-t)^2*6452.0+3*t^2*(1-t)*6419.0+t^3*6372.0, (1-t)^3*3402.0+3*t*(1-t)^2*3430.0+3*t^2*(1-t)*3432.0+t^3*3409.0)\\right)' });
 calculator.setExpression({ id: 'a-slider214', latex: '\\left((1-t)^3*6446.0+3*t*(1-t)^2*6443.0+3*t^2*(1-t)*6435.0+t^3*6428.0, (1-t)^3*3300.0+3*t*(1-t)^2*3262.0+3*t^2*(1-t)*3219.0+t^3*3205.0)\\right)' });
 calculator.setExpression({ id: 'a-slider215', latex: '\\left((1-t)^3*6428.0+3*t*(1-t)^2*6415.0+3*t^2*(1-t)*6370.0+t^3*6326.0, (1-t)^3*3205.0+3*t*(1-t)^2*3177.0+3*t^2*(1-t)*3146.0+t^3*3136.0)\\right)' });
-calculator.setExpression({ id: 'a-slider216', latex: 'y=0.2413793103448276x+1609.0344827586207\left\{6297.0\le x\le 6326.0\right\}\left\{3129.0\le y\le 3136.0\right\}' });
-calculator.setExpression({ id: 'a-slider217', latex: 'y=7.571428571428571x+-44548.28571428571\left\{6297.0\le x\le 6304.0\right\}\left\{3129.0\le y\le 3182.0\right\}' });
+calculator.setExpression({ id: 'a-slider216', latex: 'y=0.2413793103448276x+1609.0344827586207\\left\{6297.0 x 6326.0\\right\}\\left\{3129.0 y 3136.0}' });
+calculator.setExpression({ id: 'a-slider217', latex: 'y=7.571428571428571x+-44548.28571428571\\left\{6297.0 x 6304.0\\right\}\\left\{3129.0 y 3182.0}' });
 calculator.setExpression({ id: 'a-slider218', latex: '\\left((1-t)^3*6304.0+3*t*(1-t)^2*6319.0+3*t^2*(1-t)*6372.0+t^3*6428.0, (1-t)^3*3182.0+3*t*(1-t)^2*3289.0+3*t^2*(1-t)*3370.0+t^3*3370.0)\\right)' });
 calculator.setExpression({ id: 'a-slider219', latex: '\\left((1-t)^3*6428.0+3*t*(1-t)^2*6453.0+3*t^2*(1-t)*6453.0+t^3*6446.0, (1-t)^3*3370.0+3*t*(1-t)^2*3370.0+3*t^2*(1-t)*3370.0+t^3*3300.0)\\right)' });
 calculator.setExpression({ id: 'a-slider220', latex: '\\left((1-t)^3*3869.0+3*t*(1-t)^2*3833.0+3*t^2*(1-t)*3792.0+t^3*3779.0, (1-t)^3*3386.0+3*t*(1-t)^2*3369.0+3*t^2*(1-t)*3285.0+t^3*3201.0)\\right)' });
-calculator.setExpression({ id: 'a-slider221', latex: 'y=6.166666666666667x+-20102.833333333336\left\{3767.0\le x\le 3779.0\right\}\left\{3127.0\le y\le 3201.0\right\}' });
-calculator.setExpression({ id: 'a-slider222', latex: 'y=-3.128205128205128x+14910.948717948719\left\{3728.0\le x\le 3767.0\right\}\left\{3127.0\le y\le 3249.0\right\}' });
+calculator.setExpression({ id: 'a-slider221', latex: 'y=6.166666666666667x+-20102.833333333336\\left\{3767.0 x 3779.0\\right\}\\left\{3127.0 y 3201.0}' });
+calculator.setExpression({ id: 'a-slider222', latex: 'y=-3.128205128205128x+14910.948717948719\\left\{3728.0 x 3767.0\\right\}\\left\{3127.0 y 3249.0}' });
 calculator.setExpression({ id: 'a-slider223', latex: '\\left((1-t)^3*3728.0+3*t*(1-t)^2*3696.0+3*t^2*(1-t)*3686.0+t^3*3670.0, (1-t)^3*3249.0+3*t*(1-t)^2*3349.0+3*t^2*(1-t)*3370.0+t^3*3370.0)\\right)' });
 calculator.setExpression({ id: 'a-slider224', latex: '\\left((1-t)^3*3670.0+3*t*(1-t)^2*3643.0+3*t^2*(1-t)*3644.0+t^3*3685.0, (1-t)^3*3370.0+3*t*(1-t)^2*3370.0+3*t^2*(1-t)*3358.0+t^3*3220.0)\\right)' });
 calculator.setExpression({ id: 'a-slider225', latex: '\\left((1-t)^3*3685.0+3*t*(1-t)^2*3722.0+3*t^2*(1-t)*3742.0+t^3*3760.0, (1-t)^3*3220.0+3*t*(1-t)^2*3091.0+3*t^2*(1-t)*2991.0+t^3*2834.0)\\right)' });
@@ -244,13 +247,13 @@ calculator.setExpression({ id: 'a-slider238', latex: '\\left((1-t)^3*4540.0+3*t*
 calculator.setExpression({ id: 'a-slider239', latex: '\\left((1-t)^3*4515.0+3*t*(1-t)^2*4507.0+3*t^2*(1-t)*4501.0+t^3*4496.0, (1-t)^3*2840.0+3*t*(1-t)^2*2840.0+3*t^2*(1-t)*2873.0+t^3*2948.0)\\right)' });
 calculator.setExpression({ id: 'a-slider240', latex: '\\left((1-t)^3*4496.0+3*t*(1-t)^2*4484.0+3*t^2*(1-t)*4455.0+t^3*4399.0, (1-t)^3*2948.0+3*t*(1-t)^2*3135.0+3*t^2*(1-t)*3241.0+t^3*3304.0)\\right)' });
 calculator.setExpression({ id: 'a-slider241', latex: '\\left((1-t)^3*4399.0+3*t*(1-t)^2*4291.0+3*t^2*(1-t)*4101.0+t^3*4082.0, (1-t)^3*3304.0+3*t*(1-t)^2*3427.0+3*t^2*(1-t)*3303.0+t^3*3096.0)\\right)' });
-calculator.setExpression({ id: 'a-slider242', latex: 'y=12.0x+-45888.0\left\{4077.0\le x\le 4082.0\right\}\left\{3036.0\le y\le 3096.0\right\}' });
-calculator.setExpression({ id: 'a-slider243', latex: 'y=-4.565217391304348x+21648.391304347824\left\{4054.0\le x\le 4077.0\right\}\left\{3036.0\le y\le 3141.0\right\}' });
+calculator.setExpression({ id: 'a-slider242', latex: 'y=12.0x+-45888.0\\left\{4077.0 x 4082.0\\right\}\\left\{3036.0 y 3096.0}' });
+calculator.setExpression({ id: 'a-slider243', latex: 'y=-4.565217391304348x+21648.391304347824\\left\{4054.0 x 4077.0\\right\}\\left\{3036.0 y 3141.0}' });
 calculator.setExpression({ id: 'a-slider244', latex: '\\left((1-t)^3*4054.0+3*t*(1-t)^2*4026.0+3*t^2*(1-t)*4008.0+t^3*3978.0, (1-t)^3*3141.0+3*t*(1-t)^2*3265.0+3*t^2*(1-t)*3315.0+t^3*3353.0)\\right)' });
 calculator.setExpression({ id: 'a-slider245', latex: '\\left((1-t)^3*3978.0+3*t*(1-t)^2*3949.0+3*t^2*(1-t)*3901.0+t^3*3869.0, (1-t)^3*3353.0+3*t*(1-t)^2*3387.0+3*t^2*(1-t)*3402.0+t^3*3386.0)\\right)' });
 calculator.setExpression({ id: 'a-slider246', latex: '\\left((1-t)^3*5371.0+3*t*(1-t)^2*5289.0+3*t^2*(1-t)*5225.0+t^3*5193.0, (1-t)^3*3389.0+3*t*(1-t)^2*3364.0+3*t^2*(1-t)*3298.0+t^3*3205.0)\\right)' });
-calculator.setExpression({ id: 'a-slider247', latex: 'y=2.9411764705882355x+-12068.529411764706\left\{5176.0\le x\le 5193.0\right\}\left\{3155.0\le y\le 3205.0\right\}' });
-calculator.setExpression({ id: 'a-slider248', latex: 'y=-4.375x+25800.0\left\{5168.0\le x\le 5176.0\right\}\left\{3155.0\le y\le 3190.0\right\}' });
+calculator.setExpression({ id: 'a-slider247', latex: 'y=2.9411764705882355x+-12068.529411764706\\left\{5176.0 x 5193.0\\right\}\\left\{3155.0 y 3205.0}' });
+calculator.setExpression({ id: 'a-slider248', latex: 'y=-4.375x+25800.0\\left\{5168.0 x 5176.0\\right\}\\left\{3155.0 y 3190.0}' });
 calculator.setExpression({ id: 'a-slider249', latex: '\\left((1-t)^3*5168.0+3*t*(1-t)^2*5126.0+3*t^2*(1-t)*5118.0+t^3*5099.0, (1-t)^3*3190.0+3*t*(1-t)^2*3356.0+3*t^2*(1-t)*3380.0+t^3*3380.0)\\right)' });
 calculator.setExpression({ id: 'a-slider250', latex: '\\left((1-t)^3*5099.0+3*t*(1-t)^2*5088.0+3*t^2*(1-t)*5080.0+t^3*5080.0, (1-t)^3*3380.0+3*t*(1-t)^2*3380.0+3*t^2*(1-t)*3373.0+t^3*3364.0)\\right)' });
 calculator.setExpression({ id: 'a-slider251', latex: '\\left((1-t)^3*5080.0+3*t*(1-t)^2*5080.0+3*t^2*(1-t)*5100.0+t^3*5124.0, (1-t)^3*3364.0+3*t*(1-t)^2*3355.0+3*t^2*(1-t)*3257.0+t^3*3146.0)\\right)' });
