@@ -2,7 +2,7 @@
 
 <a href="https://imgur.com/3dMZQ2l"><img src="https://i.imgur.com/3dMZQ2l.png" title="source: imgur.com" /></a>
 
-## Screenshots
+## Example Outputs
 
 Computer science club logo:  https://www.desmos.com/calculator/dv4rccpeai
 
@@ -24,7 +24,8 @@ Spider Man (Lag Warning): https://www.desmos.com/calculator/izdfc0qpm2
 
 ![img.png](Images/spiderman.png)
 
-*_For all graphs the original image is included on the right for reference, program generated output is on the left_*
+*_For some graphs the original image is included on the right for reference, program generated output is on the left,
+The image is not part of the computer generated output_*
 
 ## How It Works
 

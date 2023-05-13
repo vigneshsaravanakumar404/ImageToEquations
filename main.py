@@ -317,9 +317,9 @@ for i in range(len(equations)):
 desmos += "</script>"
 
 # Save and open Desmos file
-with open("desmos.html", "w") as f:
+with open("HTML Examples/spiderman.html", "w") as f:
     f.write(desmos)
-webbrowser.open("desmos.html", new=2)
+webbrowser.open("HTML Examples/spiderman.html", new=2)
 
 # TODO:
 # Explain the math
@@ -328,6 +328,3 @@ webbrowser.open("desmos.html", new=2)
 # Create sample HTML files
 
 # save the equations to a file
-with open("equations.txt", "w") as f:
-    for equation in equations:
-        f.write(equation.replace("\\\\", "\\") + "\n")
