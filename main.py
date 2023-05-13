@@ -13,7 +13,7 @@ Usage:
  - Or convert PNG images to SVG using https://convertio.co/png-svg/
 """
 # Enter file location here
-file = open(r"C:\Users\Vigne\Downloads\Red-Bull-logo.svg", "r")
+file = open(r"C:\Users\Vigne\Downloads\26ba4e7054e670b99dba901071a2165c-spiderman-art-geek-stuff (1).svg", "r")
 data = str(file.read()).replace('fill="#000000" opacity="1.000000" stroke="none"', "")
 file.close()
 
@@ -326,3 +326,8 @@ webbrowser.open("desmos.html", new=2)
 # Complete to do in readme
 # Clean up Github Profile
 # Create sample HTML files
+
+# save the equations to a file
+with open("equations.txt", "w") as f:
+    for equation in equations:
+        f.write(equation.replace("\\\\", "\\") + "\n")
