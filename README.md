@@ -3,19 +3,25 @@
 <a href="https://imgur.com/3dMZQ2l"><img src="https://i.imgur.com/3dMZQ2l.png" title="source: imgur.com" /></a>
 
 ## Screenshots
+
 Computer science club logo:  https://www.desmos.com/calculator/dv4rccpeai
+
 ![img2.png](Images/cslogo.png)
 
 SBHS Logo https://www.desmos.com/calculator/fbou42kptf
+
 ![img3.png](Images/sbhsvikings.png)
 
 750Royals Logo: https://www.desmos.com/calculator/wjrwpiiese
+
 ![img4.png](Images/royalslogo.png)
 
 Rick Astley: https://www.desmos.com/calculator/lqt7ojodrm
+
 ![img5.png](Images/rickastely.png)
 
 Spider Man (Lag Warning): https://www.desmos.com/calculator/izdfc0qpm2
+
 ![img.png](Images/spiderman.png)
 
 *_For all graphs the original image is included on the right for reference, program generated output is on the left_*
