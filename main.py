@@ -13,7 +13,7 @@ Usage:
  - Or convert PNG images to SVG using https://convertio.co/png-svg/
 """
 # Enter file location here
-file = open(r"C:\Users\Vigne\Downloads\26ba4e7054e670b99dba901071a2165c-spiderman-art-geek-stuff (1).svg", "r")
+file = open(r"C:/Users/Vigne/Downloads/download-_8_.svg", "r")
 data = str(file.read()).replace('fill="#000000" opacity="1.000000" stroke="none"', "")
 file.close()
 
@@ -317,9 +317,9 @@ for i in range(len(equations)):
 desmos += "</script>"
 
 # Save and open Desmos file
-with open("HTML Examples/spiderman.html", "w") as f:
+with open("spiderman.html", "w") as f:
     f.write(desmos)
-webbrowser.open("HTML Examples/spiderman.html", new=2)
+webbrowser.open("spiderman.html", new=2)
 
 # TODO:
 # Explain the math
@@ -328,3 +328,7 @@ webbrowser.open("HTML Examples/spiderman.html", new=2)
 # Create sample HTML files
 
 # save the equations to a file
+
+# print all the eauations
+for i in range(len(equations)):
+    print(equations[i].replace("\\\\", "\\"))
