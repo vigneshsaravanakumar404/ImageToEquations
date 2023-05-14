@@ -74,14 +74,7 @@ Once the equations are placed in this parametric form, the equations can be plac
 
 ## Demo
 
-**to do include demo video**
-
-
-<div align="center">
-    <a href="Images/demovideo.webm">
-        <img src="https://i.imgur.com/vKb2F1B.png" alt="Watch the video">
-    </a>
-</div>
+![Video](https://youtu.be/msBMIHPenUg)
 
 ## Installation
 ```bash
