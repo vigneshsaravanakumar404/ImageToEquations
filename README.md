@@ -79,16 +79,13 @@ quadratic, $3$ for cubic, etc.).
 
 Given distinct points $P_{0}$ and $P_{1}$, a linear Bézier curve is simply a line between those two points. The curve is
 given by:
-${\displaystyle \mathbf {B} (t)=\mathbf {P} _{0}+t(\mathbf {P} _{1}-\mathbf {P} _{0})=(1-t)\mathbf {P} _{0}+t\mathbf
-{P} _{1},\ 0\leq t\leq 1}$
+${\displaystyle \mathbf {B} (t)=\mathbf {P} _{0}+t(\mathbf {P} _{1}-\mathbf {P} _{0})=(1-t)\mathbf {P} _{0}+t\mathbf  {P} _{1},\ 0\leq t\leq 1}$
 
 Given distinct points $P_{0}$, $P_{1}$, and $P_{2}$, a quadratic Bézier curve is:
-${\displaystyle \mathbf {B} (t)=(1-t)[(1-t)\mathbf {P} _{0}+t\mathbf {P} _{1}]
-+t[(1-t)\mathbf {P} _{1}+t\mathbf {P} _{2}],\ 0\leq t\leq 1}$
+${\displaystyle \mathbf {B} (t)=(1-t)[(1-t)\mathbf {P} _{0}+t\mathbf {P} _{1}] +t[(1-t)\mathbf {P} _{1}+t\mathbf {P} _{2}],\ 0\leq t\leq 1}$
 
 Given distict points $P_{0}$, $P_{1}$, $P_{2}$, and $P_{3}$, a cubic Bézier curve is:
-${\displaystyle \mathbf {B} (t)=(1-t)^{3}\mathbf {P} _{0}+3(1-t)^{2}t\mathbf {P} _{1}+3(1-t)t^{2}\mathbf {P} _
-{2}+t^{3}\mathbf {P} _{3},\ 0\leq t\leq 1.}$
+${\displaystyle \mathbf {B} (t)=(1-t)^{3}\mathbf {P} _{0}+3(1-t)^{2}t\mathbf {P} _{1}+3(1-t)t^{2}\mathbf {P} _ {2}+t^{3}\mathbf {P} _{3},\ 0\leq t\leq 1.}$
 
 Once the equations are placed in this parametric form, the equations can be placed in desmos to be graphed. Since
 desmos's API relies on your local browser to redner the graphs. A HTML desmos graph is constructed using desmos API. The
