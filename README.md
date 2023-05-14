@@ -74,7 +74,7 @@ Once the equations are placed in this parametric form, the equations can be plac
 
 ## Demo
 
-![Video](https://youtu.be/msBMIHPenUg)
+Demo Video: https://youtu.be/msBMIHPenUg
 
 ## Installation
 ```bash
