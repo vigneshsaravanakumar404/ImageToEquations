@@ -3,6 +3,7 @@
         margin: 100px;
     }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 # Image to Equation
 
@@ -35,13 +36,12 @@ The image is not part of the computer generated output_*
 
 ## How It Works
 
-This program converts an image into a set of grapahble equations, that are then displayed on desmos. The program
-takes advantage of a file format called SVG (Scalable Vector Graphics). Unlike other methods of encoding images, like
-PNG
-and JPEG, SVG files store the image using mathematical equations instead. For this reason SVG files are very compact
-and often used in 2D website design. Even android studios makes use of it for storing icons. Below is an example of an
-SVG file that represent Python's logo.
-
+This program converts an image into a set of grapahble equations. These are then graphed on demos using its API
+that are then displayed on desmos. The program takes advantage of a file format called SVG (Scalable Vector Graphics).
+Unlike other methods of encoding images, like PNG and JPEG, SVG files store the image using mathematical equations
+instead.
+For this reason SVG files are very compact and often used in 2D website design. Even android studios makes use of
+it for storing icons. Below is an example of an SVG file that represent Python's logo:
 ```svg
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
@@ -69,21 +69,34 @@ SVG file that represent Python's logo.
 
 <img src="Images/img.png" width="150" height="150">
 
+The list of points in the ```d``` attribute of the ```path``` are called Bézier points. These Bézier points are then
+converted into a set of equations called Bézier curves. Bézier curves can take several shapes, but the most common
+curves are linear Béziers, quadratic Béziers, and cubic Béziers. Most curves can be represented solely by these
+curve types. For the sake of simplicity the program only takes into account liear, quadratic and cubic Béziers.
+In the file sets of points are indicated to be either linear, quadratic or cubic by the letters ```l```, ```q```, and
+```c```. Additionally, the letter ```z``` is used to indicate the end of a path and the letter ```m``` is used to
+move the starting point of a path to a specific coordinate (x,y). Given a set of ```n``` points where ```n = 1``` for
+linear, ```2``` for quadratic, ```3``` for cubic, etc.)
+
+$x^2$
+
+```svg
+
 ## Demo
 
-**to do include demo video**
+        **to do include demo video**
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
-    <img src="https://i.imgur.com/vKb2F1B.png" alt="Watch the video">
-  </a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+        <img src="https://i.imgur.com/vKb2F1B.png" alt="Watch the video">
+    </a>
 </div>
 
-## Installation
+        ## Installation
 
-```bash
-  pip install svgpathtools
-  pip install svgpathtools
-  pip install numpy
+        ```bash
+        pip install svgpathtools
+        pip install svgpathtools
+        pip install numpy
 ```
 
 ## Built With
