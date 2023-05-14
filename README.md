@@ -1,3 +1,9 @@
+<style>
+    body {
+        margin: 100px;
+    }
+</style>
+
 # Image to Equation
 
 <a href="https://imgur.com/3dMZQ2l"><img src="https://i.imgur.com/3dMZQ2l.png" title="source: imgur.com" /></a>
@@ -22,7 +28,7 @@ Rick Astley: https://www.desmos.com/calculator/lqt7ojodrm
 
 Spider Man (Lag Warning): https://www.desmos.com/calculator/izdfc0qpm2
 
-![img.png](Images/spiderman.png)
+![img.png](Images/spiderman.png )
 
 *_For some graphs the original image is included on the right for reference, program generated output is on the left,
 The image is not part of the computer generated output_*
@@ -30,11 +36,11 @@ The image is not part of the computer generated output_*
 ## How It Works
 
 This program converts an image into a set of grapahble equations, that are then displayed on desmos. The program
-takes advantage of a file format called SVG (Scalable Vector Graphics). Unlike other methods of encoding images like PNG
+takes advantage of a file format called SVG (Scalable Vector Graphics). Unlike other methods of encoding images, like
+PNG
 and JPEG, SVG files store the image using mathematical equations instead. For this reason SVG files are very compact
 and often used in 2D website design. Even android studios makes use of it for storing icons. Below is an example of an
 SVG file that represent Python's logo.
-![img.png](Images/img.png| =250x250)/
 
 ```svg
 <?xml version="1.0" standalone="no"?>
@@ -60,6 +66,9 @@ SVG file that represent Python's logo.
    41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z"/>
     </svg>
 ```
+
+<img src="Images/img.png" width="150" height="150">
+
 ## Demo
 
 **to do include demo video**
