@@ -68,14 +68,7 @@ This program converts an image into a set of grapahble equations. These are then
 
 
 
-The list of points in the ```d``` attribute of the ```path``` are called Bézier points. These Bézier points are then
-converted into a set of equations called Bézier curves. Bézier curves can take several shapes, but the most common
-curves are linear Béziers, quadratic Béziers, and cubic Béziers. Most curves can be represented solely by these curve
-types. For the sake of simplicity the program only takes into account liear, quadratic and cubic Béziers. In the file
-sets of points are indicated to be either linear, quadratic or cubic by the letters ```l```, ```q```, and ```c```.
-Additionally, the letter ```z``` is used to indicate the end of a path and the letter ```m``` is used to move the
-starting point of a path to a specific coordinate (x,y). Given a set of $n$ points where `$n = 1$ for linear, $2$ for
-quadratic, $3$ for cubic, etc.).
+The list of points in the ```d``` attribute of the ```path``` are called Bézier points. These Bézier points are then converted into a set of equations called Bézier curves. Bézier curves can take several shapes, but the most common curves are linear Béziers, quadratic Béziers, and cubic Béziers. Most curves can be represented solely by these curve types. For the sake of simplicity the program only takes into account liear, quadratic and cubic Béziers. In the file sets of points are indicated to be either linear, quadratic or cubic by the letters ```l```, ```q```, and ```c```. Additionally, the letter ```z``` is used to indicate the end of a path and the letter ```m``` is used to move the starting point of a path to a specific coordinate (x,y). Given a set of $n$ points where $n = 1$ for linear, $2$ for quadratic, $3$ for cubic, etc.).
 
 Given distinct points $P_{0}$ and $P_{1}$, a linear Bézier curve is simply a line between those two points. The curve is
 given by:
@@ -87,9 +80,7 @@ ${\displaystyle \mathbf {B} (t)=(1-t)[(1-t)\mathbf {P} _{0}+t\mathbf {P} _{1}] +
 Given distict points $P_{0}$, $P_{1}$, $P_{2}$, and $P_{3}$, a cubic Bézier curve is:
 ${\displaystyle \mathbf {B} (t)=(1-t)^{3}\mathbf {P} _{0}+3(1-t)^{2}t\mathbf {P} _{1}+3(1-t)t^{2}\mathbf {P} _ {2}+t^{3}\mathbf {P} _{3},\ 0\leq t\leq 1.}$
 
-Once the equations are placed in this parametric form, the equations can be placed in desmos to be graphed. Since
-desmos's API relies on your local browser to redner the graphs. A HTML desmos graph is constructed using desmos API. The
-HTML file is then opened by the browser.
+Once the equations are placed in this parametric form, the equations can be placed in desmos to be graphed. Since desmos's API relies on your local browser to redner the graphs. A HTML desmos graph is constructed using desmos API. The HTML file is then opened by the browser.
 
 ## Demo
 
