@@ -29,7 +29,7 @@ The image is not part of the computer generated output_*
 
 ## How It Works
 <div style="text-align: justify;">
-This program converts an image into a set of graphable equations. These are then graphed on demos using its API. This program takes advantage of a file format called SVG (Scalable Vector Graphics). Unlike other methods of encoding images, like PNG and JPEG, SVG files encode the image using mathematical equations. For this reason, SVG files are very compact and often used in 2D website design. Even Android studios make use of it for storing icons. Below is an example of an SVG file that represents Python's logo:
+This program converts an image into a set of graphable equations. These are then graphed on demos using its API. This program takes advantage of a file format called SVG (Scalable Vector Graphics). Unlike other methods of encoding images, like PNG and JPEG, SVG files encode the image using mathematical equations. For this reason, SVG files are very compact and often used in 2D website design. Even Android Studio makes use of it for storing icons. Below is an example of an SVG file that represents Python's logo:
 </div>
 
 ```svg
