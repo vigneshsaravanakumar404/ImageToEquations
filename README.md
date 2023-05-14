@@ -29,7 +29,7 @@ The image is not part of the computer generated output_*
 
 ## How It Works
 <div style="text-align: justify;">
-This program converts an image into a set of grapahble equations. These are then graphed on demos using its API that are then displayed on desmos. The program takes advantage of a file format called SVG (Scalable Vector Graphics). Unlike other methods of encoding images, like PNG and JPEG, SVG files store the image using mathematical equations instead. For this reason SVG files are very compact and often used in 2D website design. Even android studios makes use of it for storing icons. Below is an example of an SVG file that represent Python's logo:
+This program converts an image into a set of graphable equations. These are then graphed on demos using its API. This program takes advantage of a file format called SVG (Scalable Vector Graphics). Unlike other methods of encoding images, like PNG and JPEG, SVG files encode the image using mathematical equations. For this reason SVG files are very compact and often used in 2D website design. Even android studios makes use of it for storing icons. Below is an example of an SVG file that represent Python's logo:
 </div>
 
 ```svg
@@ -61,10 +61,10 @@ This program converts an image into a set of grapahble equations. These are then
 
 
 <div style="text-align: justify;">
-The list of points in the ```d``` attribute of the ```path``` are called Bézier points. These Bézier points are then converted into a set of equations called Bézier curves. Bézier curves can take several shapes, but the most common curves are linear Béziers, quadratic Béziers, and cubic Béziers. Most curves can be represented solely by these curve types. For the sake of simplicity the program only takes into account liear, quadratic and cubic Béziers. In the file sets of points are indicated to be either linear, quadratic or cubic by the letters ```l```, ```q```, and ```c```. Additionally, the letter ```z``` is used to indicate the end of a path and the letter ```m``` is used to move the starting point of a path to a specific coordinate (x,y). Given a set of $n$ points where $n = 1$ for linear, $2$ for quadratic, $3$ for cubic, etc.).
+The list of points in the $d$ attribute of the $path$ are called Bézier points. These Bézier points are then converted into a set of equations called Bézier curves. Bézier curves can take several shapes, but the most common curves are linear Béziers, quadratic Béziers, and cubic Béziers. Most curves can be represented solely by these curve types. For the sake of simplicity the program only takes into account linear, quadratic and cubic Béziers. In the file, sets of points are indicated to be either linear, quadratic or cubic by the letters $l$, $q$, and $c$. Additionally, the letter $z$ is used to indicate the end of a path and the letter $m$ is used to move the starting point of a path to a specific coordinate (x,y). Given a set of n points where n = 1 for linear, 2 for quadratic, 3 for cubic, etc.).
 
-Given distinct points $P_{0}$ and $P_{1}$, a linear Bézier curve is simply a line between those two points. The curve is
-given by:
+
+Given distinct points $P_{0}$ and $P_{1}$, a linear Bézier curve is simply a line between those two points. The curve is given by:
 ${\displaystyle \mathbf {B} (t)=\mathbf {P} _{0}+t(\mathbf {P} _{1}-\mathbf {P} _{0})=(1-t)\mathbf {P} _{0}+t\mathbf  {P} _{1},\ 0\leq t\leq 1}$
 
 Given distinct points $P_{0}$, $P_{1}$, and $P_{2}$, a quadratic Bézier curve is:
@@ -75,6 +75,7 @@ ${\displaystyle \mathbf {B} (t)=(1-t)^{3}\mathbf {P} _{0}+3(1-t)^{2}t\mathbf {P}
 
 Once the equations are placed in this parametric form, the equations can be placed in desmos to be graphed. Since desmos's API relies on your local browser to redner the graphs. A HTML desmos graph is constructed using desmos API. The HTML file is then opened by the browser.
 </div>
+
 ## Demo
 
 **to do include demo video**
@@ -87,7 +88,6 @@ Once the equations are placed in this parametric form, the equations can be plac
 </div>
 
 ## Installation
-
 ```bash
 pip install svgpathtools
 pip install svgpathtools
@@ -121,6 +121,7 @@ pip install numpy
 - [SVG Documentation](https://www.w3.org/2000/svg)
 - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
 - [Awesome README](https://github.com/matiassingers/awesome-readme)
+- [Bezier Curve Explanation](https://towardsdatascience.com/b%C3%A9zier-curve-bfffdadea212)
 
 
 
