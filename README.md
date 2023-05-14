@@ -76,9 +76,7 @@ curve types. For the sake of simplicity the program only takes into account liea
 In the file sets of points are indicated to be either linear, quadratic or cubic by the letters ```l```, ```q```, and
 ```c```. Additionally, the letter ```z``` is used to indicate the end of a path and the letter ```m``` is used to
 move the starting point of a path to a specific coordinate (x,y). Given a set of ```n``` points where ```n = 1``` for
-linear, ```2``` for quadratic, ```3``` for cubic, etc.)
-
-$x^2$
+linear, ```2``` for quadratic, ```3``` for cubic, etc.) $x^2$
 
 ```svg
 
