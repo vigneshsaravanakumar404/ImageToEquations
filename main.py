@@ -13,7 +13,7 @@ Usage:
  - Or convert PNG images to SVG using https://convertio.co/png-svg/
 """
 # Enter file location here
-file = open(r"C:/Users/Vigne/Downloads/download-_8_.svg", "r")
+file = open(r"C:/Users/Vigne/Downloads/download-_6_.svg", "r")
 data = str(file.read()).replace('fill="#000000" opacity="1.000000" stroke="none"', "")
 file.close()
 
