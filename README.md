@@ -62,9 +62,7 @@ This program converts an image into a set of graphable equations. These are then
 
 <div style="text-align: justify;">
 The list of points in the $d$ attribute of the $path$ are called Bézier points. These Bézier points are then converted into a set of equations called Bézier curves. Bézier curves can take several shapes, but the most common curves are linear Béziers, quadratic Béziers, and cubic Béziers. Most curves can be represented solely by these curve types. For the sake of simplicity the program only takes into account linear, quadratic and cubic Béziers. In the file, sets of points are indicated to be either linear, quadratic or cubic by the letters $l$, $q$, and $c$. Additionally, the letter $z$ is used to indicate the end of a path and the letter $m$ is used to move the starting point of a path to a specific coordinate (x,y). Given a set of n points where n = 1 for linear, 2 for quadratic, 3 for cubic, etc.).
-
-
-Given distinct points $P_{0}$ and $P_{1}$, a linear Bézier curve is simply a line between those two points. The curve is given by:
+<br>Given distinct points $P_{0}$ and $P_{1}$, a linear Bézier curve is simply a line between those two points. The curve is given by:
 ${\displaystyle \mathbf {B} (t)=\mathbf {P} _{0}+t(\mathbf {P} _{1}-\mathbf {P} _{0})=(1-t)\mathbf {P} _{0}+t\mathbf  {P} _{1},\ 0\leq t\leq 1}$
 
 Given distinct points $P_{0}$, $P_{1}$, and $P_{2}$, a quadratic Bézier curve is:
