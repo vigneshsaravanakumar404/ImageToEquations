@@ -92,14 +92,12 @@ HTML file is then opened by the browser.
 
 **to do include demo video**
 
-```HTML
 
 <div align="center">
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
         <img src="https://i.imgur.com/vKb2F1B.png" alt="Watch the video">
     </a>
 </div>
-```
 
 ## Installation
 
