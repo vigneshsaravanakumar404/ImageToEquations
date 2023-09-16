@@ -13,7 +13,7 @@ Usage:
  - Or convert PNG images to SVG using https://convertio.co/png-svg/
 """
 # Enter file location here
-file = open(r"C:\Users\Vigne\Downloads\309-3099202_3d-cube-isometric-cube-png.svg", "r")
+file = open(r"Images\Untitled (3).svg", "r")
 data = str(file.read()).replace('fill="#000000" opacity="1.000000" stroke="none"', "")
 file.close()
 
@@ -115,7 +115,7 @@ for segment in path:
         start = aplusbiFormat(segment.start.real, segment.start.imag)
         end = aplusbiFormat(segment.end.real, segment.end.imag)
 
-        # check to make sure line doesn't have undefined slope to prevent mathematical erorrs
+        # check to make sure line doesn't have undefined slope to prevent mathematical errors
         if end.real - start.real != 0 and end.imag - start.imag != 0:
             # calculate the slope and y-intercept of the line segment
             m = (end.imag - start.imag) / (end.real - start.real)
@@ -332,3 +332,8 @@ webbrowser.open("spiderman.html", new=2)
 # print all the eauations
 for i in range(len(equations)):
     print(equations[i].replace("\\\\", "\\"))
+
+# save the equations to a file
+with open("equations.txt", "w") as f:
+    for i in range(len(equations)):
+        f.write(equations[i].replace("\\\\", "\\") + "\n")
